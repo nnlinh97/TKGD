@@ -450,8 +450,9 @@ ul {
 }
 
 .categorie-search-box .nice-select .list {
-    height: 350px;
+    height: 200px;
     overflow-y: auto;
+    width: 150px;
 }
 
 .bootstrap-select {
@@ -465,6 +466,7 @@ ul {
     margin: 0;
     width: 150px;
     border: none;
+    z-index: 99;
 }
 .cart-box > ul > li:not(:first-child) {
   margin-left: 20px;
@@ -780,6 +782,7 @@ span.total-pro {
     z-index: 99;
     border: 1px solid #ededed;
     border-top-width: 0;
+    height: 650px;
 }
 
 .vertical-menu-list li {
