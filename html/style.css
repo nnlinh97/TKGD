@@ -782,8 +782,7 @@ span.total-pro {
     z-index: 99;
     border: 1px solid #ededed;
     border-top-width: 0;
-    
-    height: 650px;
+    height: 250px;
 }
 
 .vertical-menu-list li {
@@ -870,11 +869,19 @@ span.total-pro {
 }
 
 .vertical-menu-list > li ul.megamenu-two {
-    width: 440px;
+    width: 850px;
+}
+
+.vertical-menu-list > li ul.megamenu-three {
+    width: 550px;
+}
+
+.vertical-menu-list > li ul.megamenu-three li.single-megamenu{
+    width: 60%
 }
 
 .vertical-menu-list > li ul.megamenu-two li.single-megamenu {
-    width: 50%;
+    width: 60%;
 }
 
 .vertical-menu-list .ht-dropdown {
@@ -4544,4 +4551,14 @@ a.shipping-calculator-button:hover {
   text-decoration: none;
   top: 6px;
   transition: all 0.3s ease-in 0s;
+}
+
+.highlight-searching div.highlight-searching-title {
+    margin-top: 280px;
+}
+
+.highlight-searching div button.btn-outline-secondary {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin: 10 10 10 10;
 }
