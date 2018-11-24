@@ -1591,7 +1591,7 @@ li.megamenu-img a {
 
 .newsletter-box .subscribe {
     background: #fff none repeat scroll 0 0;
-    border: 0 none;
+    border: 1px solid skyblue;
     border-radius: 5px;
     color: #777;
     display: block;
@@ -1606,21 +1606,21 @@ li.megamenu-img a {
 }
 
 .newsletter-box .submit {
-    background: #212121 none repeat scroll 0 0;
+    background: #00afef none repeat scroll 0 0;
     border: 0 none;
     border-radius: 0 5px 5px 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    font-family: "Lato",sans-serif;
+    font-family: "Open Sans",sans-serif;
     color: #fff;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 900;
     height: 50px;
     line-height: 50px;
     padding: 0 35px;
     position: absolute;
     right: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     top: 0;
     -webkit-transition: all 300ms ease-in 0s;
     transition: all 300ms ease-in 0s;
@@ -3921,6 +3921,7 @@ p.checkout-coupon input[type="submit"] {
     font-weight: 500;
     padding: 20px 10px;
     text-align: center;
+    font-weight: bold;
     text-transform: capitalize;
     vertical-align: middle;
     white-space: nowrap;
@@ -4013,7 +4014,7 @@ p.checkout-coupon input[type="submit"] {
 
 .table-content table td.product-name a:hover,
 .buttons-cart a:hover {
-    color: #e62e04;
+    color:#007ff0;
 }
 
 .product-thumbnail img {
@@ -4029,7 +4030,7 @@ p.checkout-coupon input[type="submit"] {
 .coupon input[type="submit"],
 .buttons-cart a,
 .coupon-info p.form-row input[type="submit"] {
-    background: #363f4d none repeat scroll 0 0;
+    background: #94a6c7 none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
     -webkit-box-shadow: none;
@@ -4150,6 +4151,7 @@ a.shipping-calculator-button:hover {
     text-transform: uppercase;
     white-space: nowrap;
     font-weight: 600;
+    color: red;
 }
 
 .cart_totals table tr.order-total th {
@@ -4157,7 +4159,7 @@ a.shipping-calculator-button:hover {
 }
 
 .wc-proceed-to-checkout a {
-    background: #222222;
+    background: rgb(241, 87, 87);
     color: #fff;
     display: inline-block;
     font-size: 14px;
