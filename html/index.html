@@ -155,7 +155,8 @@
                                         </ul>
                                     </li>
 
-                                    <li><a href="#"><i class="lnr lnr-user"></i><span class="my-cart"><span> <strong>Đăng
+                                    <li><a href="#"><i class="lnr lnr-user"></i><span class="my-cart" data-toggle="modal"
+                                                data-target="#loginModal"><span> <strong>Đăng
                                                         nhập</strong> hoặc</span><strong>Đăng kí</strong></span></a></li>
                                     <li><a href="#"><i class="lnr lnr-phone-handset"></i><span class="my-cart"><span><strong>Hotline</strong></span></span></a></li>
                                 </ul>
@@ -168,6 +169,80 @@
                 <!-- Container End -->
             </div>
             <!-- Header Middle End Here -->
+
+            <!-- Modal -->
+            <div class="LoginFormModal">
+                <div class="container">
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" id="loginPopup" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="loginModalTitle" style="text-transform: uppercase">Đăng
+                                        nhập</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-7">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="usernameInput">Tên người dùng</label>
+                                                        <input type="text" class="form-control" id="usernameInput"
+                                                            aria-describedby="usernameHelp">
+                                                        <small id="usernameHelp" class="form-text text-muted">Username
+                                                            không được chứa khoảng trắng và kí tự đặc biệt như
+                                                            *,&,^,%...</small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="passwordInput">Mật khẩu</label>
+                                                        <input type="password" class="form-control" id="passwordInput"
+                                                            aria-describedby="passwordHelp">
+                                                        <small id="passwordHelp" class="form-text text-muted">Mật khẩu
+                                                            không được quá 32 kí tự</small>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="infoRemember">
+                                                        <label class="form-check-input" for="infoRemember">Lưu thông
+                                                            tin</label>
+                                                        </input>
+                                                    </div>
+
+                                                    <div class="SubmitButton">
+                                                        <button type="submit" class="btn btn-success">Đăng nhập</button>
+                                                        <a href="#" class="ForgetPassword" style="margin-left: 10px">Quên
+                                                            mật khẩu</a>
+                                                    </div>
+
+                                                    <div class="Register">
+                                                        <span>Chưa có tài khoản, <a href="#">Đăng kí</a></span>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-lg-5">
+                                                <div class="container">
+                                                    <button class="btn btn-primary" style="margin-bottom: 20px; background-color: rgb(66, 103, 178)"><i class="fa fa-facebook-square" style="margin-right: 10px"></i> Đăng nhập
+                                                        bằng Facebook</button>
+                                                    <button class="btn btn-danger"><i class="fa fa-google" style="margin-right: 10px; background-color: rgb(219, 72, 59)"></i>Đăng nhập bằng Google</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <!-- Header Bottom Start Here -->
             <div class="header-bottom  header-sticky">
                 <div class="container">
@@ -553,53 +628,165 @@
                         </div>
                     </div>
                     <!-- Vertical Menu End Here -->
-                   <!-- Slider Area Start Here -->
-                   <div class="col-xl-9 col-lg-8 d-none d-lg-block">
-                    <div class="row">
-                    <!-- Single Product Start -->
-                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                        <div class="single-product">
-                            <!-- Product Image Start -->
-                            <div class="pro-img">
-                                <a href="product.html">
-                                    <img class="primary-img" src="img/products/24.jpg" alt="single-product">
-                                    <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
-                                </a>
-                                <div class="countdown" data-countdown="2020/03/01"></div>
-                                <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
-                                        class="lnr lnr-magnifier"></i></a>
-                            </div>
-                            <!-- Product Image End -->
-                            <!-- Product Content Start -->
-                            <div class="pro-content">
-                                <div class="pro-info">
-                                    <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
-                                    <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
-                                    <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
-                                </div>
-                                <div class="pro-actions">
-                                    <div class="actions-primary">
-                                        <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
+                    <!-- Slider Area Start Here -->
+                    <div class="col-xl-9 col-lg-8 d-none d-lg-block">
+                        <div class="row">
+                            <!-- Single Product Start -->
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="single-product">
+                                    <!-- Product Image Start -->
+                                    <div class="pro-img">
+                                        <a href="product.html">
+                                            <img class="primary-img" src="img/products/24.jpg" alt="single-product">
+                                            <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
+                                        </a>
+
+                                        <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
+                                                class="lnr lnr-magnifier"></i></a>
                                     </div>
-                                    <div class="actions-secondary">
-                                        <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
-                                                Compare</span></a>
+                                    <!-- Product Image End -->
+                                    <!-- Product Content Start -->
+                                    <div class="pro-content">
+                                        <div class="pro-info">
+                                            <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
+                                            <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
+                                            <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
+                                        </div>
+                                        <div class="pro-actions">
+                                            <div class="actions-primary">
+                                                <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
+                                            </div>
+                                            <div class="actions-secondary">
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
+                                                        Compare</span></a>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <!-- Product Content End -->
                                 </div>
                             </div>
-                            <!-- Product Content End -->
+
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="single-product">
+                                    <!-- Product Image Start -->
+                                    <div class="pro-img">
+                                        <a href="product.html">
+                                            <img class="primary-img" src="img/products/24.jpg" alt="single-product">
+                                            <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
+                                        </a>
+
+                                        <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
+                                                class="lnr lnr-magnifier"></i></a>
+                                    </div>
+                                    <!-- Product Image End -->
+                                    <!-- Product Content Start -->
+                                    <div class="pro-content">
+                                        <div class="pro-info">
+                                            <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
+                                            <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
+                                            <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
+                                        </div>
+                                        <div class="pro-actions">
+                                            <div class="actions-primary">
+                                                <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
+                                            </div>
+                                            <div class="actions-secondary">
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
+                                                        Compare</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Content End -->
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="single-product">
+                                    <!-- Product Image Start -->
+                                    <div class="pro-img">
+                                        <a href="product.html">
+                                            <img class="primary-img" src="img/products/24.jpg" alt="single-product">
+                                            <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
+                                        </a>
+
+                                        <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
+                                                class="lnr lnr-magnifier"></i></a>
+                                    </div>
+                                    <!-- Product Image End -->
+                                    <!-- Product Content Start -->
+                                    <div class="pro-content">
+                                        <div class="pro-info">
+                                            <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
+                                            <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
+                                            <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
+                                        </div>
+                                        <div class="pro-actions">
+                                            <div class="actions-primary">
+                                                <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
+                                            </div>
+                                            <div class="actions-secondary">
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
+                                                        Compare</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Content End -->
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="single-product">
+                                    <!-- Product Image Start -->
+                                    <div class="pro-img">
+                                        <a href="product.html">
+                                            <img class="primary-img" src="img/products/24.jpg" alt="single-product">
+                                            <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
+                                        </a>
+
+                                        <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
+                                                class="lnr lnr-magnifier"></i></a>
+                                    </div>
+                                    <!-- Product Image End -->
+                                    <!-- Product Content Start -->
+                                    <div class="pro-content">
+                                        <div class="pro-info">
+                                            <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
+                                            <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
+                                            <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
+                                        </div>
+                                        <div class="pro-actions">
+                                            <div class="actions-primary">
+                                                <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
+                                            </div>
+                                            <div class="actions-secondary">
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
+                                                        Compare</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Content End -->
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="single-product">
+                        <!-- Single Product End -->
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="single-product">
                                     <!-- Product Image Start -->
                                     <div class="pro-img">
                                         <a href="product.html">
                                             <img class="primary-img" src="img/products/24.jpg" alt="single-product">
                                             <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
                                         </a>
-                                        <div class="countdown" data-countdown="2020/03/01"></div>
+
                                         <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                                 class="lnr lnr-magnifier"></i></a>
                                     </div>
@@ -616,24 +803,26 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
                                 </div>
-                    </div>
+                            </div>
 
-                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="single-product">
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="single-product">
                                     <!-- Product Image Start -->
                                     <div class="pro-img">
                                         <a href="product.html">
                                             <img class="primary-img" src="img/products/24.jpg" alt="single-product">
                                             <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
                                         </a>
-                                        <div class="countdown" data-countdown="2020/03/01"></div>
+
                                         <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                                 class="lnr lnr-magnifier"></i></a>
                                     </div>
@@ -650,24 +839,25 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
                                 </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="single-product">
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="single-product">
                                     <!-- Product Image Start -->
                                     <div class="pro-img">
                                         <a href="product.html">
                                             <img class="primary-img" src="img/products/24.jpg" alt="single-product">
                                             <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
                                         </a>
-                                        <div class="countdown" data-countdown="2020/03/01"></div>
+
                                         <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                                 class="lnr lnr-magnifier"></i></a>
                                     </div>
@@ -684,156 +874,57 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Product Content End -->
                                 </div>
-                    </div>
-                </div>
-                    <!-- Single Product End -->
-                    <div class="row">
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                    <div class="single-product">
-                                            <!-- Product Image Start -->
-                                            <div class="pro-img">
-                                                <a href="product.html">
-                                                    <img class="primary-img" src="img/products/24.jpg" alt="single-product">
-                                                    <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
-                                                </a>
-                                                <div class="countdown" data-countdown="2020/03/01"></div>
-                                                <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
-                                                        class="lnr lnr-magnifier"></i></a>
-                                            </div>
-                                            <!-- Product Image End -->
-                                            <!-- Product Content Start -->
-                                            <div class="pro-content">
-                                                <div class="pro-info">
-                                                    <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
-                                                    <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
-                                                    <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
-                                                </div>
-                                                <div class="pro-actions">
-                                                    <div class="actions-primary">
-                                                        <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
-                                                    </div>
-                                                    <div class="actions-secondary">
-                                                        <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
-                                                                Compare</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Product Content End -->
-                                        </div>
-                            </div>
-                            
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                    <div class="single-product">
-                                            <!-- Product Image Start -->
-                                            <div class="pro-img">
-                                                <a href="product.html">
-                                                    <img class="primary-img" src="img/products/24.jpg" alt="single-product">
-                                                    <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
-                                                </a>
-                                                <div class="countdown" data-countdown="2020/03/01"></div>
-                                                <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
-                                                        class="lnr lnr-magnifier"></i></a>
-                                            </div>
-                                            <!-- Product Image End -->
-                                            <!-- Product Content Start -->
-                                            <div class="pro-content">
-                                                <div class="pro-info">
-                                                    <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
-                                                    <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
-                                                    <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
-                                                </div>
-                                                <div class="pro-actions">
-                                                    <div class="actions-primary">
-                                                        <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
-                                                    </div>
-                                                    <div class="actions-secondary">
-                                                        <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
-                                                                Compare</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Product Content End -->
-                                        </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                    <div class="single-product">
-                                            <!-- Product Image Start -->
-                                            <div class="pro-img">
-                                                <a href="product.html">
-                                                    <img class="primary-img" src="img/products/24.jpg" alt="single-product">
-                                                    <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
-                                                </a>
-                                                <div class="countdown" data-countdown="2020/03/01"></div>
-                                                <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
-                                                        class="lnr lnr-magnifier"></i></a>
-                                            </div>
-                                            <!-- Product Image End -->
-                                            <!-- Product Content Start -->
-                                            <div class="pro-content">
-                                                <div class="pro-info">
-                                                    <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
-                                                    <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
-                                                    <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
-                                                </div>
-                                                <div class="pro-actions">
-                                                    <div class="actions-primary">
-                                                        <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
-                                                    </div>
-                                                    <div class="actions-secondary">
-                                                        <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
-                                                                Compare</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Product Content End -->
+                                <div class="single-product">
+                                    <!-- Product Image Start -->
+                                    <div class="pro-img">
+                                        <a href="product.html">
+                                            <img class="primary-img" src="img/products/24.jpg" alt="single-product">
+                                            <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
+                                        </a>
+
+                                        <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
+                                                class="lnr lnr-magnifier"></i></a>
+                                    </div>
+                                    <!-- Product Image End -->
+                                    <!-- Product Content Start -->
+                                    <div class="pro-content">
+                                        <div class="pro-info">
+                                            <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
+                                            <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
+                                            <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
                                         </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                    <div class="single-product">
-                                            <!-- Product Image Start -->
-                                            <div class="pro-img">
-                                                <a href="product.html">
-                                                    <img class="primary-img" src="img/products/24.jpg" alt="single-product">
-                                                    <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
-                                                </a>
-                                                <div class="countdown" data-countdown="2020/03/01"></div>
-                                                <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
-                                                        class="lnr lnr-magnifier"></i></a>
+                                        <div class="pro-actions">
+                                            <div class="actions-primary">
+                                                <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
-                                            <!-- Product Image End -->
-                                            <!-- Product Content Start -->
-                                            <div class="pro-content">
-                                                <div class="pro-info">
-                                                    <h4><a href="product.html">Light Inverted Pendant Quick</a></h4>
-                                                    <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
-                                                    <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
-                                                </div>
-                                                <div class="pro-actions">
-                                                    <div class="actions-primary">
-                                                        <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
-                                                    </div>
-                                                    <div class="actions-secondary">
-                                                        <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
-                                                                Compare</span></a>
-                                                    </div>
-                                                </div>
+                                            <div class="actions-secondary">
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
+                                                        Compare</span></a>
                                             </div>
-                                            <!-- Product Content End -->
                                         </div>
+                                    </div>
+                                    <!-- Product Content End -->
+                                </div>
                             </div>
+                        </div>
+
                     </div>
 
-                </div>
 
-
-                <!-- Slider Area End Here -->
+                    <!-- Slider Area End Here -->
                 </div>
                 <!-- Row End -->
             </div>
@@ -859,7 +950,7 @@
                                 <img class="primary-img" src="img/products/1.jpg" alt="single-product">
                                 <img class="secondary-img" src="img/products/7.jpg" alt="single-product">
                             </a>
-                            <div class="countdown" data-countdown="2020/03/01"></div>
+
                             <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                     class="lnr lnr-magnifier"></i></a>
                         </div>
@@ -878,7 +969,7 @@
                                 <div class="actions-secondary">
                                     <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
                                             Compare</span></a>
-                                            
+
                                 </div>
                             </div>
                         </div>
@@ -893,7 +984,7 @@
                                 <img class="primary-img" src="img/products/24.jpg" alt="single-product">
                                 <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
                             </a>
-                            <div class="countdown" data-countdown="2020/03/01"></div>
+
                             <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                     class="lnr lnr-magnifier"></i></a>
                         </div>
@@ -926,7 +1017,7 @@
                                 <img class="primary-img" src="img/products/42.jpg" alt="single-product">
                                 <img class="secondary-img" src="img/products/43.jpg" alt="single-product">
                             </a>
-                            <div class="countdown" data-countdown="2020/03/01"></div>
+
                             <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                     class="lnr lnr-magnifier"></i></a>
                         </div>
@@ -960,7 +1051,7 @@
                                 <img class="primary-img" src="img/products/30.jpg" alt="single-product">
                                 <img class="secondary-img" src="img/products/31.jpg" alt="single-product">
                             </a>
-                            <div class="countdown" data-countdown="2020/03/01"></div>
+
                             <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                     class="lnr lnr-magnifier"></i></a>
                         </div>
@@ -993,7 +1084,7 @@
                                 <img class="primary-img" src="img/products/8.jpg" alt="single-product">
                                 <img class="secondary-img" src="img/products/9.jpg" alt="single-product">
                             </a>
-                            <div class="countdown" data-countdown="2020/03/01"></div>
+
                             <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                     class="lnr lnr-magnifier"></i></a>
                         </div>
@@ -1027,7 +1118,7 @@
                                 <img class="primary-img" src="img/products/10.jpg" alt="single-product">
                                 <img class="secondary-img" src="img/products/11.jpg" alt="single-product">
                             </a>
-                            <div class="countdown" data-countdown="2020/03/01"></div>
+
                             <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i
                                     class="lnr lnr-magnifier"></i></a>
                         </div>
@@ -1082,7 +1173,7 @@
                     <div class="tab-menu mb-25">
                         <div class="section-ttitle">
                             <h2>New Arrivals</h2>
-                       </div>
+                        </div>
                         <!-- Nav tabs -->
                         <ul class="nav tabs-area" role="tablist">
                             <li class="nav-item">
@@ -1106,9 +1197,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#electronics">Electronics </a>
                             </li>
-                        </ul>                       
+                        </ul>
 
-                    </div> 
+                    </div>
 
                     <!-- Tab Contetn Start -->
                     <div class="tab-content">
@@ -1125,7 +1216,8 @@
                                                 <img class="primary-img" src="img/products/1.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/2.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1140,8 +1232,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1149,7 +1243,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1157,7 +1251,8 @@
                                                 <img class="primary-img" src="img/products/3.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/4.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1172,8 +1267,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1193,7 +1290,8 @@
                                                 <img class="primary-img" src="img/products/5.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/6.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1208,8 +1306,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1217,7 +1317,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1225,13 +1325,14 @@
                                                 <img class="primary-img" src="img/products/8.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/9.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
                                         <div class="pro-content">
                                             <div class="pro-info">
-                                                <h4><a href="product.html">Eames and Bark  Style</a></h4>
+                                                <h4><a href="product.html">Eames and Bark Style</a></h4>
                                                 <p><span class="price">$180.45</span><del class="prev-price">$200.50</del></p>
                                                 <div class="label-product l_sale">18<span class="symbol-percent">%</span></div>
                                             </div>
@@ -1240,8 +1341,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1261,7 +1364,8 @@
                                                 <img class="primary-img" src="img/products/11.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/12.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1276,8 +1380,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1285,7 +1391,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1293,7 +1399,8 @@
                                                 <img class="primary-img" src="img/products/15.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/16.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1308,8 +1415,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1329,7 +1438,8 @@
                                                 <img class="primary-img" src="img/products/13.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/14.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1344,8 +1454,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1353,7 +1465,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1361,7 +1473,8 @@
                                                 <img class="primary-img" src="img/products/1.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/7.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1376,8 +1489,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1404,7 +1519,8 @@
                                                 <img class="primary-img" src="img/products/42.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/43.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1419,8 +1535,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1428,7 +1546,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1436,7 +1554,8 @@
                                                 <img class="primary-img" src="img/products/40.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/41.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1451,8 +1570,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1472,7 +1593,8 @@
                                                 <img class="primary-img" src="img/products/39.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/38.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1487,8 +1609,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1496,7 +1620,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1504,7 +1628,8 @@
                                                 <img class="primary-img" src="img/products/36.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/37.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1519,8 +1644,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1540,13 +1667,14 @@
                                                 <img class="primary-img" src="img/products/35.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/36.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
                                         <div class="pro-content">
                                             <div class="pro-info">
-                                                <h4><a href="product.html">Bark and  Vortex Side</a></h4>
+                                                <h4><a href="product.html">Bark and Vortex Side</a></h4>
                                                 <p><span class="price">$69.20</span><del class="prev-price">$145.50</del></p>
                                                 <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
                                             </div>
@@ -1555,8 +1683,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1564,7 +1694,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1572,7 +1702,8 @@
                                                 <img class="primary-img" src="img/products/34.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/35.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1587,8 +1718,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1608,13 +1741,14 @@
                                                 <img class="primary-img" src="img/products/32.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/33.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
                                         <div class="pro-content">
                                             <div class="pro-info">
-                                                <h4><a href="product.html">kallery kids  weare</a></h4>
+                                                <h4><a href="product.html">kallery kids weare</a></h4>
                                                 <p><span class="price">$84.45</span><del class="prev-price">$105.50</del></p>
                                                 <div class="label-product l_sale">20<span class="symbol-percent">%</span></div>
                                             </div>
@@ -1623,8 +1757,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1632,7 +1768,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1640,7 +1776,8 @@
                                                 <img class="primary-img" src="img/products/1.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/7.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1655,8 +1792,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1683,7 +1822,8 @@
                                                 <img class="primary-img" src="img/products/43.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/42.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1698,8 +1838,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1707,7 +1849,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1715,7 +1857,8 @@
                                                 <img class="primary-img" src="img/products/41.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/39.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1730,8 +1873,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1751,7 +1896,8 @@
                                                 <img class="primary-img" src="img/products/5.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/6.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1766,8 +1912,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1775,7 +1923,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1783,7 +1931,8 @@
                                                 <img class="primary-img" src="img/products/9.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/10.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1798,8 +1947,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1819,7 +1970,8 @@
                                                 <img class="primary-img" src="img/products/11.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/12.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1834,8 +1986,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1843,7 +1997,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1851,7 +2005,8 @@
                                                 <img class="primary-img" src="img/products/3.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/4.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1866,8 +2021,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1887,7 +2044,8 @@
                                                 <img class="primary-img" src="img/products/43.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/42.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1902,8 +2060,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1911,7 +2071,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1919,7 +2079,8 @@
                                                 <img class="primary-img" src="img/products/1.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/7.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1934,8 +2095,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1962,7 +2125,8 @@
                                                 <img class="primary-img" src="img/products/17.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/18.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -1977,8 +2141,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1986,7 +2152,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -1994,7 +2160,8 @@
                                                 <img class="primary-img" src="img/products/19.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/20.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -2009,8 +2176,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2030,7 +2199,8 @@
                                                 <img class="primary-img" src="img/products/20.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/21.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -2045,8 +2215,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2054,7 +2226,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -2062,7 +2234,8 @@
                                                 <img class="primary-img" src="img/products/21.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/22.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -2077,8 +2250,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2098,7 +2273,8 @@
                                                 <img class="primary-img" src="img/products/23.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/24.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -2113,8 +2289,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2122,7 +2300,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -2130,7 +2308,8 @@
                                                 <img class="primary-img" src="img/products/24.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -2145,8 +2324,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2166,7 +2347,8 @@
                                                 <img class="primary-img" src="img/products/26.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/27.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -2181,8 +2363,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2190,7 +2374,7 @@
                                         <span class="sticker-new">new</span>
                                     </div>
                                     <!-- Single Product End -->
-                                     <!-- Single Product Start -->
+                                    <!-- Single Product Start -->
                                     <div class="single-product">
                                         <!-- Product Image Start -->
                                         <div class="pro-img">
@@ -2198,7 +2382,8 @@
                                                 <img class="primary-img" src="img/products/28.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/29.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View"><i class="lnr lnr-magnifier"></i></a>
                                         </div>
                                         <!-- Product Image End -->
                                         <!-- Product Content Start -->
@@ -2213,8 +2398,10 @@
                                                     <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
                                                 </div>
                                                 <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To Compare</span></a>
-                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i> <span>Add to WishList</span></a>
+                                                    <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span></a>
+                                                    <a href="wishlist.html" title="WishList"><i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2299,7 +2486,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2330,7 +2519,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2361,7 +2552,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2392,7 +2585,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2423,7 +2618,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2454,7 +2651,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2485,7 +2684,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2516,7 +2717,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2554,7 +2757,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2585,7 +2790,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2616,7 +2823,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2647,7 +2856,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2678,7 +2889,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2709,7 +2922,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2740,7 +2955,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2771,7 +2988,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2809,7 +3028,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2840,7 +3061,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2871,7 +3094,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2902,7 +3127,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2933,7 +3160,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -2964,7 +3193,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3002,7 +3233,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3033,7 +3266,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3064,7 +3299,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3095,7 +3332,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3126,7 +3365,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3157,7 +3398,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3188,7 +3431,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3219,7 +3464,9 @@
                                                 <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                             </div>
                                             <div class="actions-secondary">
-                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                                <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i>
+                                                    <span>Add
+                                                        To
                                                         Compare</span></a>
                                             </div>
                                         </div>
@@ -3239,8 +3486,8 @@
             <!-- Container End -->
         </div>
         <!-- Arrivals Products Area End Here -->
-         <!-- Like Products Area Start Here -->
-         <div class="like-product ptb-95 off-white-bg pt-sm-50 pb-sm-55 ">
+        <!-- Like Products Area Start Here -->
+        <div class="like-product ptb-95 off-white-bg pt-sm-50 pb-sm-55 ">
             <div class="container">
                 <div class="like-product-area">
                     <h2 class="section-ttitle2 mb-30">You May Like </h2>
@@ -3272,7 +3519,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3304,7 +3552,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3340,7 +3589,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3372,7 +3622,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3408,7 +3659,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3440,7 +3692,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3476,7 +3729,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3508,7 +3762,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3544,7 +3799,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3576,7 +3832,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3612,7 +3869,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3644,7 +3902,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3680,7 +3939,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3712,7 +3972,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3748,7 +4009,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
@@ -3780,7 +4042,8 @@
                                             <a href="cart.html" title="Add to Cart">+ Add To Cart</a>
                                         </div>
                                         <div class="actions-secondary">
-                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add To
+                                            <a href="compare.html" title="Compare"><i class="lnr lnr-sync"></i> <span>Add
+                                                    To
                                                     Compare</span></a>
                                         </div>
                                     </div>
