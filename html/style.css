@@ -4564,3 +4564,55 @@ a.shipping-calculator-button:hover {
     margin-bottom: 10px;
     margin: 10 10 10 10;
 }
+
+.LoginFormModal .modal-lg {
+    max-width: 1000px;
+    max-height: 800px!important;
+    margin: 60px auto;
+}
+
+.modal-header {
+    background-color: #E62E04;
+    color: white;
+}
+
+.modal-body {
+    font-size: 14px;
+}
+.modal-body .form-check label.form-check-input {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.modal-body .form-check input.form-check-input {
+    position: absolute;
+    right: 100px;
+    top: 4px;
+    resize: none;
+}
+.modal-body .SubmitButton button .SubmitButton a{
+    position: absolute;
+    left: 15px;
+}
+
+.modal-body .Register span {
+    position: relative;
+    text-align: left;
+    top: 10px;
+    
+}
+
+.modal-body .col-lg-5 {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.form-group imput.form-control {
+    font-size: 12px;
+}
+
+.col-lg-5 .row button {
+    padding: 10px;
+}
