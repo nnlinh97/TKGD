@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Chi tiết đơn hàng || Truemart Responsive Html5 Ecommerce Template</title>
+    <title>Chi tiết đơn hàng || BabyShop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicons -->
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -46,7 +46,7 @@
 
     <!-- Main Wrapper Start Here -->
     <div class="wrapper">
-       <header>
+        <header>
             <!-- Header Middle Start Here -->
             <div class="header-middle ptb-15">
                 <div class="container">
@@ -54,8 +54,9 @@
                         <div class="col-lg-3 col-md-12">
                             <div class="logo mb-all-30">
                                 <!-- <a href="index.html"><img src="img/logo/logo.png" alt="logo-image"></a> -->
-                                <a href="index.html">
-                                    <img src="http://img0cf.b8cdn.com/images/logo/93/1701193_23028_20171212125852.gif" alt="logo-image">
+                                <a href="linh_index_logged.html">
+                                    <img src="http://img0cf.b8cdn.com/images/logo/93/1701193_23028_20171212125852.gif"
+                                        alt="logo-image">
                                 </a>
                             </div>
                         </div>
@@ -71,7 +72,18 @@
                                             <option value="4">Quần áo bé gái</option>
                                             <option value="5">Bỉm và Tã giấy</option>
                                             <option value="6">Đồ chơi</option>
-                                        </select><div class="nice-select bootstrap-select" tabindex="0"><span class="current">Tất cả</span><ul class="list"><li data-value="0" class="option selected">Tất cả</li><li data-value="2" class="option">Sữa</li><li data-value="3" class="option">Quần áo bé trai</li><li data-value="4" class="option">Quần áo bé gái</li><li data-value="5" class="option">Bỉm và Tã giấy</li><li data-value="6" class="option">Đồ chơi</li></ul></div>
+                                        </select>
+                                        <div class="nice-select bootstrap-select" tabindex="0"><span class="current">Tất
+                                                cả</span>
+                                            <ul class="list">
+                                                <li data-value="0" class="option selected">Tất cả</li>
+                                                <li data-value="2" class="option">Sữa</li>
+                                                <li data-value="3" class="option">Quần áo bé trai</li>
+                                                <li data-value="4" class="option">Quần áo bé gái</li>
+                                                <li data-value="5" class="option">Bỉm và Tã giấy</li>
+                                                <li data-value="6" class="option">Đồ chơi</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <input type="text" name="search" placeholder="Mua gì có đó...">
                                     <button>
@@ -204,7 +216,8 @@
             <!-- Modal -->
             <div class="LoginFormModal">
                 <div class="container">
-                    <div class="modal fade" id="cmtModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true" style="display: none;">
+                    <div class="modal fade" id="cmtModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+                        aria-hidden="true" style="display: none;">
                         <div class="modal-dialog modal-lg modal-dialog-centered" id="loginPopup" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -220,77 +233,85 @@
                                         <div class="row">
                                             <div class="col-lg-7">
                                                 <form>
-													<div class="form-group">
-													<label for="usernameInput">Đánh giá về sản phẩm *</label>
-														<div class="rating-summary fix mtb-10">
-															<div class="rating">
-																<i class="fa fa-star" style="font-size: 37px;"></i>
-																<i class="fa fa-star" style="font-size: 37px;"></i>
-																<i class="fa fa-star" style="font-size: 37px;"></i>
-																<i class="fa fa-star-o" style="font-size: 37px;"></i>
-																<i class="fa fa-star-o" style="font-size: 37px;"></i>
-															</div>
-														</div>
-													</div>
-													
+                                                    <div class="form-group">
+                                                        <label class="RatingProduct" for="usernameInput">Đánh giá về
+                                                            sản phẩm *</label>
+                                                        <div class="RatingStar">
+                                                            <fieldset class="rating">
+                                                                <input type="radio" id="star5" name="rating" value="5" /><label
+                                                                    class="full" for="star5" title="Awesome - 5 stars"></label>
+                                                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label
+                                                                    class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                                <input type="radio" id="star4" name="rating" value="4" /><label
+                                                                    class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label
+                                                                    class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                                                <input type="radio" id="star3" name="rating" value="3" /><label
+                                                                    class="full" for="star3" title="Meh - 3 stars"></label>
+                                                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label
+                                                                    class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                                <input type="radio" id="star2" name="rating" value="2" /><label
+                                                                    class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label
+                                                                    class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                                                <input type="radio" id="star1" name="rating" value="1" /><label
+                                                                    class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                                                <input type="radio" id="starhalf" name="rating" value="half" /><label
+                                                                    class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <br>
                                                     <div class="form-group">
                                                         <label for="usernameInput">Tiêu đề của nhận xét</label>
-                                                        <input type="text" class="form-control" id="usernameInput" aria-describedby="usernameHelp">
-                                                        
+                                                        <input type="text" class="form-control" id="usernameInput"
+                                                            aria-describedby="usernameHelp">
+
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="usernameInput">Viết nhận xét *</label>
-                                                        <input type="text" class="form-control" id="passwordInput" aria-describedby="passwordHelp">
-                                                        
+                                                        <label for="exampleFormControlTextarea1">Viết nhận xét</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="4"></textarea>
                                                     </div>
-													
-													<br>
-													
-													<small id="passwordHelp" class="form-text text-muted">
-                                                            (*) Phần bắt buộc
+
+                                                    <br>
+
+                                                    <small id="passwordHelp" class="form-text text-muted">
+                                                        (*) Phần bắt buộc
                                                     </small>
-													
-													<br>
+                                                    <br>
 
-													<div>
-													Thêm hình sản phẩm 
-													<div class="buttons-cart">
-														
-														<a href="#">+</a>
-													</div>
-													</div>
-													
-                                                    
-                                                    <div style="text-align: right" class="SubmitButton">
-                                                        <button type="submit" class="btn btn-success"><a style="color: white" href="product.html">Gửi</a></button>
-                                                        
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlFile1">Thêm hình ảnh</label>
+                                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
                                                     </div>
 
-                                                    
+                                                    <div style="text-align: right" class="SubmitButton">
+                                                        <input type="submit" value="Gửi nhận xét" class="return-customer-btn"
+                                                            onclick="location.href='huy_chitietdonhang.html';">
+                                                    </div>
                                                 </form>
                                             </div>
 
                                             <div class="col-lg-5">
                                                 <div class="container">
-													<a href="#"><img width="50%" src="img/products/aokhoac1.jpg" alt="cart-image"></a>
-													<div>Áo Khoác Thun Bé Trai Baby B077008</div>
-													<div class="rating-summary fix mtb-10">
-														<div class="rating">
-															<i class="fa fa-star" style="font-size: 37px;"></i>
-															<i class="fa fa-star" style="font-size: 37px;"></i>
-															<i class="fa fa-star-o" style="font-size: 37px;"></i>
-															<i class="fa fa-star-o" style="font-size: 37px;"></i>
-															<i class="fa fa-star-o" style="font-size: 37px;"></i>
-														</div>
-													</div>
-													<div style="text-align: right" >500 đánh giá</div>
-														
-													<br><br><br><br>
-													
-													<div>Thông tin hỗ trợ liên hệ</div>
-													<div>&nbspsupport@bbs.vn</div>
-													<div>Hoặc:</div>
-													<div>Hotline: 1900 0009</div>
+                                                    <a href="#"><img width="50%" src="img/products/aokhoac1.jpg" alt="cart-image"></a>
+                                                    <div>Áo Khoác Thun Bé Trai Baby B077008</div>
+                                                    <div class="rating-summary fix mtb-10">
+                                                        <div class="rating">
+                                                            <i class="fa fa-star" style="font-size: 30px; padding-left: 140px"></i>
+                                                            <i class="fa fa-star" style="font-size: 30px;"></i>
+                                                            <i class="fa fa-star" style="font-size: 30px;"></i>
+                                                            <i class="fa fa-star" style="font-size: 30px;"></i>
+                                                            <i class="fa fa-star-o" style="font-size: 30px;"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div style="padding-left: 140px">500 đánh giá</div>
+                                                    <br><br><br><br>
+                                                    <div>Thông tin hỗ trợ liên hệ</div>
+                                                    <div>&nbspsupport@bbs.vn</div>
+                                                    <div>Hoặc:</div>
+                                                    <div>Hotline: 1900 0009</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -471,17 +492,17 @@
                 </div>
             </div>
             <!-- Mobile Vertical Menu Start End -->
-        </header>      
+        </header>
         <!-- Main Header Area End Here -->
         <!-- Categorie Menu & Slider Area Start Here -->
-        
+
         <!-- Categorie Menu & Slider Area End Here -->
         <!-- Breadcrumb Start -->
         <div class="breadcrumb-area mt-30">
             <div class="container">
                 <div class="breadcrumb">
                     <ul class="d-flex align-items-center">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="linh_index_logged.html">Home</a></li>
                         <li><a href="huy_dsdonhang.html">Danh Sách Đơn Hàng</a></li>
                         <li class="active"><a href="huy_chitietdonhang.html">OOL</a></li>
                     </ul>
@@ -499,507 +520,570 @@
                         <aside>
                             <div class="single-sidebar latest-pro mb-30">
                                 <!--<h3 class="sidebar-title">Tài Khoản</h3>-->
-								<h3 class="mb-10 custom-title">Tài Khoản</h3>
+                                <h3 class="mb-10 custom-title">Tài Khoản</h3>
                                 <ul class="sidbar-style">
                                     <li><a href="shop.html">Cập nhật thông tin</a></li>
                                     <li><a href="shop.html">Thông báo của tôi</a></li>
                                     <li><a href="shop.html">Lịch sử mua hàng</a></li>
                                     <li><a href="shop.html">Địa chỉ mua hàng</a></li>
-									<li><a href="shop.html">Quản lý mã khuyến mãi</a></li>
-									<li><a href="shop.html">Nhận xét sản phẩm đã mua</a></li>
-									<li><a href="shop.html">Hỏi đáp</a></li>
-									<li><a href="shop.html"><< Danh sách đơn hàng</a></li>
+                                    <li><a href="shop.html">Quản lý mã khuyến mãi</a></li>
+                                    <li><a href="shop.html">Nhận xét sản phẩm đã mua</a></li>
+                                    <li><a href="shop.html">Hỏi đáp</a></li>
+                                    <li><a href="shop.html">
+                                            << Danh sách đơn hàng</a> </li> </ul> </div> </aside> </div> <!-- Single
+                                                Blog Sidebar End -->
+                                                <!-- Single Blog Sidebar Description Start -->
+                                                <div class="col-lg-9 order-1 order-lg-2">
+                                                    <div class="return-customer">
+                                                        <h3 class="" style="text-align: center">
+                                                            <div class="row">
+                                                                <div class="column" style="width: 70%; text-align: left">
+                                                                    <h3 class="mb-10 custom-title">Chi tiết đơn hàng
+                                                                        #OOL</h3>
+                                                                </div>
+                                                                <div class="column" style="width: 14%; text-align: left"><a
+                                                                        style="font-size: 65%">Đã giao</a></div>
+                                                                <div class="column" style="width: 10%; text-align: left"><a
+                                                                        style="font-size: 65%">12/05/2018</a></div>
+                                                            </div>
+                                                        </h3>
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                                    <!-- Form Start -->
+                                                                    <form action="#">
+                                                                        <!-- Table Content Start -->
+                                                                        <div class="table-content table-responsive">
+                                                                            <table>
+                                                                                <thead>
+                                                                                    <tr>
+
+                                                                                        <th width="40%" class="product-remove">Sản
+                                                                                            Phẩm</th>
+                                                                                        <th class="product-thumbnail">Giá</th>
+                                                                                        <th class="product-thumbnail">Số
+                                                                                            Lượng</th>
+                                                                                        <th class="product-price">Giảm
+                                                                                            Giá</th>
+                                                                                        <th width="15%" class="product-quantity">Tổng
+                                                                                            Tiền</th>
+
+
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="40%">
+                                                                                            <a href="product.html"><img
+                                                                                                    src="img/products/aokhoac1.jpg"
+                                                                                                    width="30%" alt="cart-image">&nbsp&nbsp&nbsp
+                                                                                                Áo Khoác Thun Bé Trai
+                                                                                                Baby</a><br>
+                                                                                        </td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">160 000
+                                                                                                đ</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">1</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">0 đ</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">160 000
+                                                                                                đ</span></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                            <div style="text-align: right">
+                                                                                <div class="return-customer-btn">
+                                                                                    <a href="#">
+                                                                                        <span style="color: white"
+                                                                                            data-toggle="modal"
+                                                                                            data-target="#cmtModal">
+                                                                                            Nhận Xét
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <br>
+
+                                                                            <table>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="40%">
+                                                                                            <a href="product.html"><img
+                                                                                                    src="img/products/aokhoac1.jpg"
+                                                                                                    width="30%" alt="cart-image">&nbsp&nbsp&nbsp
+                                                                                                Áo Khoác Thun Bé Trai
+                                                                                                Baby 2</a><br>
+                                                                                        </td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">600 000
+                                                                                                đ</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">1</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">0 đ</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">600 000
+                                                                                                đ</span></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+                                                                            <div style="text-align: right">
+                                                                                <div class="return-customer-btn">
+                                                                                    <a href="#">
+                                                                                        <span style="color: white"
+                                                                                            data-toggle="modal"
+                                                                                            data-target="#cmtModal">
+                                                                                            Nhận Xét
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <br>
+
+                                                                            <table>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td width="40%" style="text-align: left">
+                                                                                            <a>[GIFT] MÃ GIẢM GIÁ<br>10%
+                                                                                                quần áo cho bé trai</a><br>
+                                                                                        </td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">0 đ</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">1</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">0 đ</span></td>
+                                                                                        <td class="product-price"><span
+                                                                                                class="amount">0 đ</span></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+
+
+                                                                        </div>
+
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <!-- Cart Button Start -->
+                                                                            <div class="col-md-8 col-sm-12">
+                                                                            </div>
+                                                                            <!-- Cart Button Start -->
+                                                                            <!-- Cart Totals Start -->
+                                                                            <div class="col-md-4 col-sm-12">
+                                                                                <div class="cart_totals float-md-right text-md-right">
+                                                                                    <!-- <h2>Cart Totals</h2> -->
+                                                                                    <br>
+                                                                                    <table class="float-md-right">
+                                                                                        <tbody>
+                                                                                            <tr class="cart-subtotal">
+                                                                                                <th>Tổng cộng: </th>
+                                                                                                <td><span class="amount">760
+                                                                                                        000 đ</span></td>
+                                                                                            </tr>
+                                                                                            <tr class="cart-subtotal">
+                                                                                                <th>Phí vận chuyển</th>
+                                                                                                <td>
+                                                                                                    <strong><span class="amount">12
+                                                                                                            000 đ</span></strong>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="order-total">
+                                                                                                <th>Thành tiền: </th>
+                                                                                                <td>
+                                                                                                    <strong><span class="amount">772
+                                                                                                            000 đ</span></strong>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Cart Totals End -->
+                                                                        </div>
+
+                                                                        <hr>
+
+                                                                        <div class="log-in ptb-100 ptb-sm-60">
+                                                                            <div class="container">
+                                                                                <div class="row">
+                                                                                    <!-- New Customer Start -->
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="well mb-sm-30">
+                                                                                            <div class="new-customer">
+                                                                                                <h3 class="custom-title">Người
+                                                                                                    nhận hàng</h3>
+                                                                                                <p class="mtb-10"><strong></strong></p>
+                                                                                                <p>Nguyễn Văn A<br>227,
+                                                                                                    Nguyễn Văn Cừ, quận
+                                                                                                    5<br>SĐT:
+                                                                                                    0123456789</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- New Customer End -->
+                                                                                </div>
+                                                                                <br>
+                                                                                <!-- Row End -->
+                                                                                <div class="row">
+                                                                                    <!-- New Customer Start -->
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="well mb-sm-30">
+                                                                                            <div class="new-customer">
+                                                                                                <h3 class="custom-title">Hình
+                                                                                                    thức giao hàng</h3>
+                                                                                                <p class="mtb-10"><strong></strong></p>
+                                                                                                <p>Giao hàng tiết kiệm<br>Phí:
+                                                                                                    12 000 đ</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- New Customer End -->
+                                                                                    <!-- Returning Customer Start -->
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="well">
+                                                                                            <div class="return-customer">
+                                                                                                <h3 class="mb-10 custom-title">Hình
+                                                                                                    thức thanh toán</h3>
+                                                                                                <p class="mb-10"><strong></strong></p>
+                                                                                                <p>Trả tiền mặt khi
+                                                                                                    nhận hàng</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- Returning Customer End -->
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div><input type="submit" value="THEO DÕI ĐƠN HÀNG"
+                                                                                    class="return-customer-btn"></div><br>
+                                                                            <!-- Container End -->
+                                                                        </div>
+
+
+                                                                        <!-- Table Content Start -->
+                                                                    </form>
+                                                                    <!-- Form End -->
+                                                                </div>
+                                                            </div>
+                                                            <!-- Row End -->
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- Single Blog Sidebar Description End -->
+                            </div>
+                    </div>
+                    <!-- Container End -->
+                </div>
+                <!-- Single Blog Page End Here -->
+
+                <!-- Footer Area Start Here -->
+                <footer class="off-white-bg2 pt-95 bdr-top pt-sm-55">
+                    <!-- Footer Top Start -->
+                    <div class="footer-top">
+                        <div class="container">
+                            <!-- Signup Newsletter Start -->
+                            <div class="row mb-60">
+                                <div class="col-xl-7 col-lg-7 ml-auto mr-auto col-md-8">
+                                    <div class="news-desc text-center mb-30">
+                                        <h3>Đăng kí nhận tin BabyShop</h3>
+                                        <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</p>
+                                    </div>
+                                    <div class="newsletter-box">
+                                        <form action="#">
+                                            <input class="subscribe" placeholder="Địa chỉ email của bạn" name="email"
+                                                id="subscribe" type="text">
+                                            <button type="submit" class="submit">Đăng kí</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Signup-Newsletter End -->
+                            <div class="row">
+                                <!-- Single Footer Start -->
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="single-footer mb-sm-40">
+                                        <h3 class="footer-title">Thông tin</h3>
+                                        <div class="footer-content">
+                                            <ul class="footer-list">
+                                                <li><a href="about.html">Về Babyshop</a></li>
+                                                <li><a href="#">Thông tin giao hàng</a></li>
+                                                <li><a href="#">Chính sách bảo mật</a></li>
+                                                <li><a href="contact.html">Điều khoản &amp; điều kiện</a></li>
+                                                <li><a href="login.html">FAQs</a></li>
+                                                <li><a href="login.html">Chính sách đổi trả</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Footer Start -->
+                                <!-- Single Footer Start -->
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="single-footer mb-sm-40">
+                                        <h3 class="footer-title">Dịch vụ khách hàng</h3>
+                                        <div class="footer-content">
+                                            <ul class="footer-list">
+                                                <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
+                                                <li><a href="#">Trả hàng</a></li>
+                                                <li><a href="#">Lịch sử mua hàng</a></li>
+                                                <li><a href="wishlist.html">Danh sách yêu thích</a></li>
+                                                <li><a href="#">Sơ đồ trang web</a></li>
+                                                <li><a href="#">Phiếu quà tặng</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Footer Start -->
+                                <!-- Single Footer Start -->
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="single-footer mb-sm-40">
+                                        <h3 class="footer-title">Tiện ích </h3>
+                                        <div class="footer-content">
+                                            <ul class="footer-list">
+                                                <li><a href="#">Thư mới</a></li>
+                                                <li><a href="#">Nhãn hiệu</a></li>
+                                                <li><a href="#">Phiếu quà tặng</a></li>
+                                                <li><a href="#">Liên kết</a></li>
+                                                <li><a href="#">Đặc biệt</a></li>
+                                                <li><a href="#">Bố cục trang web</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Footer Start -->
+                                <!-- Single Footer Start -->
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="single-footer mb-sm-40">
+                                        <h3 class="footer-title">Tài khoản của tôi</h3>
+                                        <div class="footer-content">
+                                            <ul class="footer-list">
+                                                <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
+                                                <li><a href="#">Đổi trả</a></li>
+                                                <li><a href="#">Tài khoản của tôi</a></li>
+                                                <li><a href="#">Lịch sử đơn hàng</a></li>
+                                                <li><a href="wishlist.html">Danh sách yêu thích</a></li>
+                                                <li><a href="#">Thư mới</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Footer Start -->
+                                <!-- Single Footer Start -->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="single-footer mb-sm-40">
+                                        <h3 class="footer-title">Liên hệ</h3>
+                                        <div class="footer-content">
+                                            <ul class="footer-list address-content">
+                                                <li><i class="lnr lnr-map-marker"></i> Địa chỉ: 169 đường 3 tháng 2,
+                                                    quận 10, TP. Hồ Chí Minh.</li>
+                                                <li><i class="lnr lnr-envelope"></i><a href="#"> mail Us:
+                                                        Support@truemart.com </a></li>
+                                                <li>
+                                                    <i class="lnr lnr-phone-handset"></i> Phone: (+84) 123 456 789)
+                                                </li>
+                                            </ul>
+                                            <div class="payment mt-25 bdr-top pt-30">
+                                                <a href="#"><img class="img" src="img/payment/1.png" alt="payment-image"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Footer Start -->
+                            </div>
+                            <!-- Row End -->
+                        </div>
+                        <!-- Container End -->
+                    </div>
+                    <!-- Footer Top End -->
+                    <!-- Footer Middle Start -->
+                    <div class="footer-middle text-center">
+                        <div class="container">
+                            <div class="footer-middle-content pt-20 pb-30">
+                                <ul class="social-footer">
+                                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><img src="img/icon/social-img1.png" alt="google play"></a></li>
+                                    <li><a href="#"><img src="img/icon/social-img2.png" alt="app store"></a></li>
                                 </ul>
                             </div>
-                            
-                            
-                        </aside>
+                        </div>
+                        <!-- Container End -->
                     </div>
-                    <!-- Single Blog Sidebar End -->
-                    <!-- Single Blog Sidebar Description Start -->
-                    <div class="col-lg-9 order-1 order-lg-2">
-						<div class="return-customer">
-							<h3 class="" style="text-align: center">
-								<div class="row">
-									<div class="column" style="width: 70%; text-align: left"><h3 class="mb-10 custom-title">Chi tiết đơn hàng #OOL</h3></div>
-									<div class="column" style="width: 14%; text-align: left"><a style="font-size: 65%" >Đã giao</a></div>
-									<div class="column" style="width: 10%; text-align: left"><a style="font-size: 65%" >12/05/2018</a></div>
-								</div>
-							</h3>
-							<div class="container">
-								<div class="row">
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<!-- Form Start -->
-										<form action="#">
-											<!-- Table Content Start -->
-											<div class="table-content table-responsive">
-												<table>
-													<thead>
-														<tr>
-															
-															<th width="40%" class="product-remove">Sản Phẩm</th>
-															<th class="product-thumbnail">Giá</th>
-															<th class="product-thumbnail">Số Lượng</th>
-															<th class="product-price">Giảm Giá</th>
-															<th width="15%" class="product-quantity">Tổng Tiền</th>
-															
-															
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td width="40%">
-																<a href="product.html"><img src="img/products/aokhoac1.jpg" width="30%" alt="cart-image">&nbsp&nbsp&nbsp Áo Khoác Thun Bé Trai Baby</a><br>
-															</td>
-															<td class="product-price"><span class="amount">160 000 đ</span></td>
-															<td class="product-price"><span class="amount">1</span></td>
-															<td class="product-price"><span class="amount">0 đ</span></td>
-															<td class="product-price"><span class="amount">160 000 đ</span></td>																
-														</tr>
-													</tbody>
-												</table>
-												
-												<div style="text-align: right">
-													<div class="return-customer-btn">
-														<a href="#">
-															<span style="color: white" data-toggle="modal" data-target="#cmtModal">
-																Nhận Xét
-															</span>
-														</a>
-													</div>
-												</div>
-												
-												<br>
-												
-												<table>
-													<tbody>
-														<tr>
-															<td width="40%">
-																<a href="product.html"><img src="img/products/aokhoac1.jpg" width="30%" alt="cart-image">&nbsp&nbsp&nbsp Áo Khoác Thun Bé Trai Baby 2</a><br>
-															</td>
-															<td class="product-price"><span class="amount">600 000 đ</span></td>
-															<td class="product-price"><span class="amount">1</span></td>
-															<td class="product-price"><span class="amount">0 đ</span></td>
-															<td class="product-price"><span class="amount">600 000 đ</span></td>																
-														</tr>
-													</tbody>
-												</table>
-												
-												<div style="text-align: right">
-													<div class="return-customer-btn">
-														<a href="#">
-															<span style="color: white" data-toggle="modal" data-target="#cmtModal">
-																Nhận Xét
-															</span>
-														</a>
-													</div>
-												</div>
-												
-												<br>
-												
-												<table>
-													<tbody>
-														<tr>
-															<td width="40%" style="text-align: left">
-																<a >[GIFT] MÃ GIẢM GIÁ<br>10% quần áo cho bé trai</a><br>
-															</td>
-															<td class="product-price"><span class="amount">0 đ</span></td>
-															<td class="product-price"><span class="amount">1</span></td>
-															<td class="product-price"><span class="amount">0 đ</span></td>
-															<td class="product-price"><span class="amount">0 đ</span></td>																
-														</tr>
-													</tbody>
-												</table>
-												
-												
-											</div>
-											
-											<br>
-											
-											<div class="row">
-											   <!-- Cart Button Start -->
-												<div class="col-md-8 col-sm-12">
-												</div>
-												<!-- Cart Button Start -->
-												<!-- Cart Totals Start -->
-												<div class="col-md-4 col-sm-12">
-													<div class="cart_totals float-md-right text-md-right">
-														<!-- <h2>Cart Totals</h2> -->
-														<br>
-														<table class="float-md-right">
-															<tbody>
-																<tr class="cart-subtotal">
-																	<th>Tổng cộng: </th>
-																	<td><span class="amount">760 000 đ</span></td>
-																</tr>
-																<tr class="cart-subtotal">
-																	<th>Phí vận chuyển</th>
-																	<td>
-																		<strong><span class="amount">12 000 đ</span></strong>
-																	</td>
-																</tr>
-																<tr class="order-total">
-																	<th>Thành tiền: </th>
-																	<td>
-																		<strong><span class="amount">772 000 đ</span></strong>
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</div>
-												<!-- Cart Totals End -->
-											</div>
-	
-											<hr>
-											
-											<div class="log-in ptb-100 ptb-sm-60">
-												<div class="container">
-													<div class="row">
-														<!-- New Customer Start -->
-														<div class="col-md-12">
-															<div class="well mb-sm-30">
-																<div class="new-customer">
-																	<h3 class="custom-title">Người nhận hàng</h3>
-																	<p class="mtb-10"><strong></strong></p>
-																	<p>Nguyễn Văn A<br>227, Nguyễn Văn Cừ, quận 5<br>SĐT: 0123456789</p>
-																</div>
-															</div>
-														</div>
-														<!-- New Customer End -->
-													</div>
-													<br>
-													<!-- Row End -->
-													<div class="row">
-														<!-- New Customer Start -->
-														<div class="col-md-6">
-															<div class="well mb-sm-30">
-																<div class="new-customer">
-																	<h3 class="custom-title">Hình thức giao hàng</h3>
-																	<p class="mtb-10"><strong></strong></p>
-																	<p>Giao hàng tiết kiệm<br>Phí: 12 000 đ</p>
-																</div>
-															</div>
-														</div>
-														<!-- New Customer End -->
-														<!-- Returning Customer Start -->
-														<div class="col-md-6">
-															<div class="well">
-																<div class="return-customer">
-																	<h3 class="mb-10 custom-title">Hình thức thanh toán</h3>
-																	<p class="mb-10"><strong></strong></p>
-																	<p>Trả tiền mặt khi nhận hàng</p>
-																</div>
-															</div>
-														</div>
-														<!-- Returning Customer End -->
-													</div>
-												</div>
-												
-												<div><input type="submit" value="THEO DÕI ĐƠN HÀNG" class="return-customer-btn"></div><br>
-												<!-- Container End -->
-											</div>
-											
-											
-											<!-- Table Content Start -->
-										</form>
-										<!-- Form End -->
-									</div>
-								</div>
-								<!-- Row End -->
-							</div>
-							
-                        </div>
-						
-                    </div>
-                    <!-- Single Blog Sidebar Description End -->
-                </div>
-            </div>
-            <!-- Container End -->
-        </div>
-        <!-- Single Blog Page End Here -->
-        
-        <!-- Footer Area Start Here -->
-		<footer class="off-white-bg2 pt-95 bdr-top pt-sm-55">
-            <!-- Footer Top Start -->
-            <div class="footer-top">
-                <div class="container">
-                    <!-- Signup Newsletter Start -->
-                    <div class="row mb-60">
-                         <div class="col-xl-7 col-lg-7 ml-auto mr-auto col-md-8">
-                            <div class="news-desc text-center mb-30">
-                                 <h3>Đăng kí nhận tin BabyShop</h3>
-                                 <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</p>
-                             </div>
-                             <div class="newsletter-box">
-                                 <form action="#">
-                                      <input class="subscribe" placeholder="Địa chỉ email của bạn" name="email" id="subscribe" type="text">
-                                      <button type="submit" class="submit">Đăng kí</button>
-                                 </form>
-                             </div>
-                         </div>
-                    </div> 
-                    <!-- Signup-Newsletter End -->                   
-                    <div class="row">
-                        <!-- Single Footer Start -->
-                        <div class="col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer mb-sm-40">
-                                <h3 class="footer-title">Thông tin</h3>
-                                <div class="footer-content">
-                                    <ul class="footer-list">
-                                        <li><a href="about.html">Về Babyshop</a></li>
-                                        <li><a href="#">Thông tin giao hàng</a></li>
-                                        <li><a href="#">Chính sách bảo mật</a></li>
-                                        <li><a href="contact.html">Điều khoản &amp; điều kiện</a></li>
-                                        <li><a href="login.html">FAQs</a></li>
-                                        <li><a href="login.html">Chính sách đổi trả</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Footer Start -->
-                        <!-- Single Footer Start -->
-                        <div class="col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer mb-sm-40">
-                                <h3 class="footer-title">Dịch vụ khách hàng</h3>
-                                <div class="footer-content">
-                                    <ul class="footer-list">
-                                        <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
-                                        <li><a href="#">Trả hàng</a></li>
-                                        <li><a href="#">Lịch sử mua hàng</a></li>
-                                        <li><a href="wishlist.html">Danh sách yêu thích</a></li>
-                                        <li><a href="#">Sơ đồ trang web</a></li>
-                                        <li><a href="#">Phiếu quà tặng</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Footer Start -->
-                        <!-- Single Footer Start -->
-                        <div class="col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer mb-sm-40">
-                                <h3 class="footer-title">Tiện ích </h3>
-                                <div class="footer-content">
-                                    <ul class="footer-list">
-                                        <li><a href="#">Thư mới</a></li>
-                                        <li><a href="#">Nhãn hiệu</a></li>
-                                        <li><a href="#">Phiếu quà tặng</a></li>
-                                        <li><a href="#">Liên kết</a></li>
-                                        <li><a href="#">Đặc biệt</a></li>
-                                        <li><a href="#">Bố cục trang web</a></li>      
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Footer Start -->
-                        <!-- Single Footer Start -->
-                        <div class="col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer mb-sm-40">
-                                <h3 class="footer-title">Tài khoản của tôi</h3>
-                                <div class="footer-content">
-                                    <ul class="footer-list">
-                                        <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
-                                        <li><a href="#">Đổi trả</a></li>
-                                        <li><a href="#">Tài khoản của tôi</a></li>
-                                        <li><a href="#">Lịch sử đơn hàng</a></li>
-                                        <li><a href="wishlist.html">Danh sách yêu thích</a></li>
-                                        <li><a href="#">Thư mới</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Footer Start -->
-                        <!-- Single Footer Start -->
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-footer mb-sm-40">
-                                <h3 class="footer-title">Liên hệ</h3>
-                                <div class="footer-content">
-                                    <ul class="footer-list address-content">
-                                        <li><i class="lnr lnr-map-marker"></i> Địa chỉ: 169 đường 3 tháng 2, quận 10, TP. Hồ Chí Minh.</li>
-                                        <li><i class="lnr lnr-envelope"></i><a href="#"> mail Us: Support@truemart.com </a></li>
-                                        <li>
-                                            <i class="lnr lnr-phone-handset"></i> Phone: (+84) 123 456 789)
-                                        </li>
-                                    </ul>
-                                    <div class="payment mt-25 bdr-top pt-30">
-                                        <a href="#"><img class="img" src="img/payment/1.png" alt="payment-image"></a>
-                                    </div>                                   
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Footer Start -->
-                    </div>
-                    <!-- Row End -->
-                </div>
-                <!-- Container End -->
-            </div>
-            <!-- Footer Top End -->
-            <!-- Footer Middle Start -->
-            <div class="footer-middle text-center">
-                <div class="container">
-                    <div class="footer-middle-content pt-20 pb-30">
-                            <ul class="social-footer">
-                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><img src="img/icon/social-img1.png" alt="google play"></a></li>
-                                <li><a href="#"><img src="img/icon/social-img2.png" alt="app store"></a></li>
-                            </ul>
-                    </div>
-                </div>
-                <!-- Container End -->
-            </div>
-            <!-- Footer Middle End -->
-            <!-- Footer Bottom Start -->
-            <div class="footer-bottom pb-30">
-                <div class="container">
+                    <!-- Footer Middle End -->
+                    <!-- Footer Bottom Start -->
+                    <div class="footer-bottom pb-30">
+                        <div class="container">
 
-                     <div class="copyright-text text-center">                    
-                        <p>Copyright © 2018 <a target="_blank" href="#">Truemart</a> All Rights Reserved.</p>
-                     </div>
-                </div>
-                <!-- Container End -->
-            </div>
-            <!-- Footer Bottom End -->
-        </footer>
-        <!-- Footer Area End Here -->
-        <!-- Quick View Content Start -->
-        <div class="main-product-thumbnail quick-thumb-content">
-            <div class="container">
-                <!-- The Modal -->
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <div class="copyright-text text-center">
+                                <p>Copyright © 2018 <a target="_blank" href="#">Truemart</a> All Rights Reserved.</p>
                             </div>
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                <div class="row">
-                                    <!-- Main Thumbnail Image Start -->
-                                    <div class="col-lg-5 col-md-6 col-sm-5">
-                                        <!-- Thumbnail Large Image start -->
-                                        <div class="tab-content">
-                                            <div id="thumb-1" class="tab-pane fade show active">
-                                                <a data-fancybox="images" href="img/products/35.jpg"><img src="img/products/35.jpg" alt="product-view"></a>
-                                            </div>
-                                            <div id="thumb-2" class="tab-pane fade">
-                                                <a data-fancybox="images" href="img/products/13.jpg"><img src="img/products/13.jpg" alt="product-view"></a>
-                                            </div>
-                                            <div id="thumb-3" class="tab-pane fade">
-                                                <a data-fancybox="images" href="img/products/15.jpg"><img src="img/products/15.jpg" alt="product-view"></a>
-                                            </div>
-                                            <div id="thumb-4" class="tab-pane fade">
-                                                <a data-fancybox="images" href="img/products/4.jpg"><img src="img/products/4.jpg" alt="product-view"></a>
-                                            </div>
-                                            <div id="thumb-5" class="tab-pane fade">
-                                                <a data-fancybox="images" href="img/products/5.jpg"><img src="img/products/5.jpg" alt="product-view"></a>
-                                            </div>
-                                        </div>
-                                        <!-- Thumbnail Large Image End -->
-                                        <!-- Thumbnail Image End -->
-                                        <div class="product-thumbnail mt-20">
-                                            <div class="thumb-menu owl-carousel nav tabs-area" role="tablist">
-                                                <a class="active" data-toggle="tab" href="#thumb-1"><img src="img/products/35.jpg" alt="product-thumbnail"></a>
-                                                <a data-toggle="tab" href="#thumb-2"><img src="img/products/13.jpg" alt="product-thumbnail"></a>
-                                                <a data-toggle="tab" href="#thumb-3"><img src="img/products/15.jpg" alt="product-thumbnail"></a>
-                                                <a data-toggle="tab" href="#thumb-4"><img src="img/products/4.jpg" alt="product-thumbnail"></a>
-                                                <a data-toggle="tab" href="#thumb-5"><img src="img/products/5.jpg" alt="product-thumbnail"></a>
-                                            </div>
-                                        </div>
-                                        <!-- Thumbnail image end -->
+                        </div>
+                        <!-- Container End -->
+                    </div>
+                    <!-- Footer Bottom End -->
+                </footer>
+                <!-- Footer Area End Here -->
+                <!-- Quick View Content Start -->
+                <div class="main-product-thumbnail quick-thumb-content">
+                    <div class="container">
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
-                                    <!-- Main Thumbnail Image End -->
-                                    <!-- Thumbnail Description Start -->
-                                    <div class="col-lg-7 col-md-6 col-sm-7">
-                                        <div class="thubnail-desc fix mt-sm-40">
-                                            <h3 class="product-header">Printed Summer Dress</h3>
-                                            <div class="pro-price mtb-30">
-                                                <p class="d-flex align-items-center"><span class="prev-price">16.51</span><span class="price">$15.19</span><span class="saving-price">save 8%</span></p>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <!-- Main Thumbnail Image Start -->
+                                            <div class="col-lg-5 col-md-6 col-sm-5">
+                                                <!-- Thumbnail Large Image start -->
+                                                <div class="tab-content">
+                                                    <div id="thumb-1" class="tab-pane fade show active">
+                                                        <a data-fancybox="images" href="img/products/35.jpg"><img src="img/products/35.jpg"
+                                                                alt="product-view"></a>
+                                                    </div>
+                                                    <div id="thumb-2" class="tab-pane fade">
+                                                        <a data-fancybox="images" href="img/products/13.jpg"><img src="img/products/13.jpg"
+                                                                alt="product-view"></a>
+                                                    </div>
+                                                    <div id="thumb-3" class="tab-pane fade">
+                                                        <a data-fancybox="images" href="img/products/15.jpg"><img src="img/products/15.jpg"
+                                                                alt="product-view"></a>
+                                                    </div>
+                                                    <div id="thumb-4" class="tab-pane fade">
+                                                        <a data-fancybox="images" href="img/products/4.jpg"><img src="img/products/4.jpg"
+                                                                alt="product-view"></a>
+                                                    </div>
+                                                    <div id="thumb-5" class="tab-pane fade">
+                                                        <a data-fancybox="images" href="img/products/5.jpg"><img src="img/products/5.jpg"
+                                                                alt="product-view"></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Thumbnail Large Image End -->
+                                                <!-- Thumbnail Image End -->
+                                                <div class="product-thumbnail mt-20">
+                                                    <div class="thumb-menu owl-carousel nav tabs-area" role="tablist">
+                                                        <a class="active" data-toggle="tab" href="#thumb-1"><img src="img/products/35.jpg"
+                                                                alt="product-thumbnail"></a>
+                                                        <a data-toggle="tab" href="#thumb-2"><img src="img/products/13.jpg"
+                                                                alt="product-thumbnail"></a>
+                                                        <a data-toggle="tab" href="#thumb-3"><img src="img/products/15.jpg"
+                                                                alt="product-thumbnail"></a>
+                                                        <a data-toggle="tab" href="#thumb-4"><img src="img/products/4.jpg"
+                                                                alt="product-thumbnail"></a>
+                                                        <a data-toggle="tab" href="#thumb-5"><img src="img/products/5.jpg"
+                                                                alt="product-thumbnail"></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Thumbnail image end -->
                                             </div>
-                                            <p class="mb-20 pro-desc-details">Long printed dress with thin adjustable straps. V-neckline and wiring under the bust with ruffles at the bottom of the dress.</p>
-                                            <div class="product-size mb-20 clearfix">
-                                                <label>Size</label>
-                                                <select class="">
-                                                    <option>S</option>
-                                                    <option>M</option>
-                                                    <option>L</option>
-                                                </select>
+                                            <!-- Main Thumbnail Image End -->
+                                            <!-- Thumbnail Description Start -->
+                                            <div class="col-lg-7 col-md-6 col-sm-7">
+                                                <div class="thubnail-desc fix mt-sm-40">
+                                                    <h3 class="product-header">Printed Summer Dress</h3>
+                                                    <div class="pro-price mtb-30">
+                                                        <p class="d-flex align-items-center"><span class="prev-price">16.51</span><span
+                                                                class="price">$15.19</span><span class="saving-price">save
+                                                                8%</span></p>
+                                                    </div>
+                                                    <p class="mb-20 pro-desc-details">Long printed dress with thin
+                                                        adjustable straps. V-neckline and wiring under the bust with
+                                                        ruffles at the bottom of the dress.</p>
+                                                    <div class="product-size mb-20 clearfix">
+                                                        <label>Size</label>
+                                                        <select class="">
+                                                            <option>S</option>
+                                                            <option>M</option>
+                                                            <option>L</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="color mb-20">
+                                                        <label>color</label>
+                                                        <ul class="color-list">
+                                                            <li>
+                                                                <a class="orange active" href="#"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="paste" href="#"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="box-quantity d-flex">
+                                                        <form action="#">
+                                                            <input class="quantity mr-40" type="number" min="1" value="1">
+                                                        </form>
+                                                        <a class="add-cart" href="cart.html">add to cart</a>
+                                                    </div>
+                                                    <div class="pro-ref mt-15">
+                                                        <p><span class="in-stock"><i class="ion-checkmark-round"></i>
+                                                                IN STOCK</span></p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="color mb-20">
-                                                <label>color</label>
-                                                <ul class="color-list">
-                                                    <li>
-                                                        <a class="orange active" href="#"></a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="paste" href="#"></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="box-quantity d-flex">
-                                                <form action="#">
-                                                    <input class="quantity mr-40" type="number" min="1" value="1">
-                                                </form>
-                                                <a class="add-cart" href="cart.html">add to cart</a>
-                                            </div>
-                                            <div class="pro-ref mt-15">
-                                                <p><span class="in-stock"><i class="ion-checkmark-round"></i> IN STOCK</span></p>
-                                            </div>
+                                            <!-- Thumbnail Description End -->
                                         </div>
                                     </div>
-                                    <!-- Thumbnail Description End -->
-                                </div>
-                            </div>
-                            <!-- Modal footer -->
-                            <div class="custom-footer">
-                                <div class="socila-sharing">
-                                    <ul class="d-flex">
-                                        <li>share</li>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                    </ul>
+                                    <!-- Modal footer -->
+                                    <div class="custom-footer">
+                                        <div class="socila-sharing">
+                                            <ul class="d-flex">
+                                                <li>share</li>
+                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Quick View Content End -->
             </div>
-        </div>
-        <!-- Quick View Content End -->
-    </div>
-    <!-- Main Wrapper End Here -->
+            <!-- Main Wrapper End Here -->
 
-    <!-- jquery 3.2.1 -->
-    <script src="js/vendor/jquery-3.2.1.min.js"></script>
-    <!-- Countdown js -->
-    <script src="js/jquery.countdown.min.js"></script>
-    <!-- Mobile menu js -->
-    <script src="js/jquery.meanmenu.min.js"></script>
-    <!-- ScrollUp js -->
-    <script src="js/jquery.scrollUp.js"></script>
-    <!-- Nivo slider js -->
-    <script src="js/jquery.nivo.slider.js"></script>
-    <!-- Fancybox js -->
-    <script src="js/jquery.fancybox.min.js"></script>
-    <!-- Jquery nice select js -->
-    <script src="js/jquery.nice-select.min.js"></script>
-    <!-- Jquery ui price slider js -->
-    <script src="js/jquery-ui.min.js"></script>
-    <!-- Owl carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Bootstrap popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin js -->
-    <script src="js/plugins.js"></script>
-    <!-- Main activaion js -->
-    <script src="js/main.js"></script>
+            <!-- jquery 3.2.1 -->
+            <script src="js/vendor/jquery-3.2.1.min.js"></script>
+            <!-- Countdown js -->
+            <script src="js/jquery.countdown.min.js"></script>
+            <!-- Mobile menu js -->
+            <script src="js/jquery.meanmenu.min.js"></script>
+            <!-- ScrollUp js -->
+            <script src="js/jquery.scrollUp.js"></script>
+            <!-- Nivo slider js -->
+            <script src="js/jquery.nivo.slider.js"></script>
+            <!-- Fancybox js -->
+            <script src="js/jquery.fancybox.min.js"></script>
+            <!-- Jquery nice select js -->
+            <script src="js/jquery.nice-select.min.js"></script>
+            <!-- Jquery ui price slider js -->
+            <script src="js/jquery-ui.min.js"></script>
+            <!-- Owl carousel -->
+            <script src="js/owl.carousel.min.js"></script>
+            <!-- Bootstrap popper js -->
+            <script src="js/popper.min.js"></script>
+            <!-- Bootstrap js -->
+            <script src="js/bootstrap.min.js"></script>
+            <!-- Plugin js -->
+            <script src="js/plugins.js"></script>
+            <!-- Main activaion js -->
+            <script src="js/main.js"></script>
 </body>
 
 </html>

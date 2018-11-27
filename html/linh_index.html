@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home || Truemart Responsive Html5 Ecommerce Template</title>
+    <title>Home || babyShop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicons -->
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -52,7 +52,8 @@
                 <span class="popup_off">Close</span>
                 <div class="subscribe_area text-center mt-60">
                     <h2>Newsletter</h2>
-                    <p>Subscribe to the Truemart mailing list to receive updates on new arrivals, special offers and other discount
+                    <p>Subscribe to the Truemart mailing list to receive updates on new arrivals, special offers and
+                        other discount
                         secondaryrmation.</p>
                     <div class="subscribe-form-group">
                         <form action="#">
@@ -77,8 +78,9 @@
                         <div class="col-lg-3 col-md-12">
                             <div class="logo mb-all-30">
                                 <!-- <a href="index.html"><img src="img/logo/logo.png" alt="logo-image"></a> -->
-                                <a href="index.html">
-                                    <img src="http://img0cf.b8cdn.com/images/logo/93/1701193_23028_20171212125852.gif" alt="logo-image">
+                                <a href="linh_index.html">
+                                    <img src="http://img0cf.b8cdn.com/images/logo/93/1701193_23028_20171212125852.gif"
+                                        alt="logo-image">
                                 </a>
                             </div>
                         </div>
@@ -112,81 +114,17 @@
                                         <a href="#">
                                             <i class="lnr lnr-cart"></i>
                                             <span class="my-cart">
-                                                <span class="total-pro">2</span>
+                                                <span class="total-pro">0</span>
                                                 <span>Giỏ hàng
                                                 </span>
                                             </span>
                                         </a>
-                                        <ul class="ht-dropdown cart-box-width">
-                                            <li>
-                                                <!-- Cart Box Start -->
-                                                <div class="single-cart-box">
-                                                    <div class="cart-img">
-                                                        <a href="#">
-                                                            <img src="img/products/1.jpg" alt="cart-image">
-                                                        </a>
-                                                        <span class="pro-quantity">1X</span>
-                                                    </div>
-                                                    <div class="cart-content">
-                                                        <h6>
-                                                            <a href="product.html">Printed Summer Red </a>
-                                                        </h6>
-                                                        <span class="cart-price">27.45</span>
-                                                        <span>Size: S</span>
-                                                        <span>Color: Yellow</span>
-                                                    </div>
-                                                    <a class="del-icone" href="#">
-                                                        <i class="ion-close"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- Cart Box End -->
-                                                <!-- Cart Box Start -->
-                                                <div class="single-cart-box">
-                                                    <div class="cart-img">
-                                                        <a href="#">
-                                                            <img src="img/products/2.jpg" alt="cart-image">
-                                                        </a>
-                                                        <span class="pro-quantity">1X</span>
-                                                    </div>
-                                                    <div class="cart-content">
-                                                        <h6>
-                                                            <a href="product.html">Printed Round Neck</a>
-                                                        </h6>
-                                                        <span class="cart-price">45.00</span>
-                                                        <span>Size: XL</span>
-                                                        <span>Color: Green</span>
-                                                    </div>
-                                                    <a class="del-icone" href="#">
-                                                        <i class="ion-close"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- Cart Box End -->
-                                                <!-- Cart Footer Inner Start -->
-                                                <div class="cart-footer">
-                                                    <ul class="price-content">
-                                                        <li>Tổng cộng
-                                                            <span>$57.95</span>
-                                                        </li>
-                                                        <li>Phí Ship
-                                                            <span>$7.00</span>
-                                                        </li>
-                                                        <li>Thành tiền
-                                                            <span>$64.95</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="cart-actions text-center">
-                                                        <a class="cart-checkout" href="checkout.html">Thanh toán</a>
-                                                    </div>
-                                                </div>
-                                                <!-- Cart Footer Inner End -->
-                                            </li>
-                                        </ul>
                                     </li>
 
                                     <li>
                                         <a href="#">
                                             <i class="lnr lnr-user"></i>
-                                            <span class="my-cart">
+                                            <span class="my-cart" data-toggle="modal" data-target="#loginModal">
                                                 <span>
                                                     <strong>Đăng nhập
                                                     </strong> hoặc</span>
@@ -214,6 +152,204 @@
                 <!-- Container End -->
             </div>
             <!-- Header Middle End Here -->
+            <!-- Modal Login-->
+            <div class="LoginFormModal">
+                <div class="container">
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" id="loginPopup" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="loginModalTitle" style="text-transform: uppercase">
+                                        Đăng
+                                        nhập
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-7">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="usernameInput">Tên người dùng</label>
+                                                        <input type="text" class="form-control" id="usernameInput"
+                                                            aria-describedby="usernameHelp">
+                                                        <small id="usernameHelp" class="form-text text-muted">
+                                                            Username
+                                                            không được chứa khoảng trắng và kí tự đặc biệt như
+                                                            *,&,^,%...
+                                                        </small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="passwordInput">Mật khẩu</label>
+                                                        <input type="password" class="form-control" id="passwordInput"
+                                                            aria-describedby="passwordHelp">
+                                                        <small id="passwordHelp" class="form-text text-muted">
+                                                            Mật khẩu
+                                                            không được quá 32 kí tự
+                                                        </small>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="infoRemember">
+                                                        <label class="form-check-input" for="infoRemember">
+                                                            Lưu thông
+                                                            tin
+                                                        </label>
+                                                        </input>
+                                                    </div>
+
+                                                    <div class="SubmitButton">
+
+                                                        <input type="submit" value="Đăng nhập" class="return-customer-btn"
+                                                            onclick="location.href='linh_index_logged.html';"/>
+                                                       
+                                                        <a href="
+                                                            #" class="ForgetPassword" style="margin-left: 10px">
+                                                        Quên
+                                                        mật khẩu
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="Register">
+                                                        <span>Chưa có tài khoản, <a href="#" data-toggle="modal"
+                                                                data-target="#registerModal" data-dismiss="modal">Đăng
+                                                                kí</a></span>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-lg-5">
+                                                <div class="container">
+                                                    <button class="btn btn-primary" style="margin-bottom: 20px; background-color: rgb(66, 103, 178)">
+                                                        <i class="fa fa-facebook-square" style="margin-right: 10px"></i>
+                                                        Đăng nhập
+                                                        bằng Facebook
+                                                    </button>
+                                                    <button class="btn btn-danger"><i class="fa fa-google" style="margin-right: 10px; background-color: rgb(219, 72, 59)"></i>Đăng
+                                                        nhập bằng Google</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Modal Register-->
+            <div class="RegisterFormModal">
+                <div class="container">
+                    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="RegisterModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" id="registerPopup" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="registerModalTitle" style="text-transform: uppercase">
+                                        Đăng
+                                        kí tài khoản
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <form class="form-register" action="#">
+                                                    <fieldset>
+                                                        <legend>Your Personal Details</legend>
+                                                        <div class="form-group d-md-flex align-items-md-center">
+                                                            <label class="control-label col-md-2" for="f-name"><span
+                                                                    class="require">*</span>First Name</label>
+                                                            <div class="col-md-10">
+                                                                <input type="text" class="form-control" id="f-name"
+                                                                    placeholder="First Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group d-md-flex align-items-md-center">
+                                                            <label class="control-label col-md-2" for="l-name"><span
+                                                                    class="require">*</span>Last Name</label>
+                                                            <div class="col-md-10">
+                                                                <input type="text" class="form-control" id="l-name"
+                                                                    placeholder="Last Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group d-md-flex align-items-md-center">
+                                                            <label class="control-label col-md-2" for="email"><span
+                                                                    class="require">*</span>Enter you email address
+                                                                here...</label>
+                                                            <div class="col-md-10">
+                                                                <input type="email" class="form-control" id="email"
+                                                                    placeholder="Enter you email address here...">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group d-md-flex align-items-md-center">
+                                                            <label class="control-label col-md-2" for="number"><span
+                                                                    class="require">*</span>Telephone</label>
+                                                            <div class="col-md-10">
+                                                                <input type="email" class="form-control" id="number"
+                                                                    placeholder="Telephone">
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <legend>Your Password</legend>
+                                                        <div class="form-group d-md-flex align-items-md-center">
+                                                            <label class="control-label col-md-2" for="pwd"><span class="require">*</span>Password:</label>
+                                                            <div class="col-md-10">
+                                                                <input type="password" class="form-control" id="pwd"
+                                                                    placeholder="Password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group d-md-flex align-items-md-center">
+                                                            <label class="control-label col-md-2" for="pwd-confirm"><span
+                                                                    class="require">*</span>Confirm Password</label>
+                                                            <div class="col-md-10">
+                                                                <input type="password" class="form-control" id="pwd-confirm"
+                                                                    placeholder="Confirm password">
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset class="newsletter-input">
+                                                        <legend>Newsletter</legend>
+                                                        <div class="form-group d-md-flex align-items-md-center">
+                                                            <label class="col-md-2 control-label">Subscribe</label>
+                                                            <div class="col-md-10 radio-button">
+                                                                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                                                                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div class="terms">
+                                                        <div class="float-md-right">
+                                                            <span>I have read and agree to the <a href="#" class="agree"><b>Privacy
+                                                                        Policy</b></a></span>
+                                                            <input type="checkbox" name="agree" value="1"> &nbsp;
+                                                            <input type="submit" value="Continue" class="return-customer-btn" onclick="location.href='linh_index_logged.html';">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <!-- Header Bottom Start Here -->
             <div class="header-bottom  header-sticky">
                 <div class="container">
@@ -1637,7 +1773,8 @@
                                                 <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
                                                     alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -1684,7 +1821,8 @@
                                                 <img class="primary-img" src="img/products/3.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/4.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -1735,7 +1873,8 @@
                                                 <img class="primary-img" src="img/products/5.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/6.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -1782,7 +1921,8 @@
                                                 <img class="primary-img" src="img/products/8.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/9.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -1833,7 +1973,8 @@
                                                 <img class="primary-img" src="img/products/11.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/12.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -1880,7 +2021,8 @@
                                                 <img class="primary-img" src="img/products/15.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/16.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -1931,7 +2073,8 @@
                                                 <img class="primary-img" src="img/products/13.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/14.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -1978,7 +2121,8 @@
                                                 <img class="primary-img" src="img/products/1.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/7.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2038,7 +2182,8 @@
                                                 <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
                                                     alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2087,109 +2232,8 @@
                                                 <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
                                                     alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
-                                                <i class="lnr lnr-magnifier"></i>
-                                            </a>
-                                        </div>
-                                        <!-- Product Image End -->
-                                        <!-- Product Content Start -->
-                                        <div class="pro-content">
-                                            <div class="pro-info">
-                                                <h4>
-                                                    <a href="product.html">Bộ 5 sinh vật biển phun nước Munchkin 31205</a>
-                                                </h4>
-                                                <p>
-                                                    <span class="price">159,000 vnđ</span>
-                                                    <del class="prev-price">199,000 vnđ</del>
-                                                </p>
-                                                <div class="label-product l_sale">20
-                                                    <span class="symbol-percent">%</span>
-                                                </div>
-                                            </div>
-                                            <div class="pro-actions">
-                                                <div class="actions-primary">
-                                                    <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
-                                                </div>
-                                                <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare">
-                                                        <i class="lnr lnr-sync"></i>
-                                                        <span>Add To Compare</span>
-                                                    </a>
-                                                    <a href="wishlist.html" title="WishList">
-                                                        <i class="lnr lnr-heart"></i>
-                                                        <span>Add to WishList</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Product Content End -->
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Single Product End -->
-                                </div>
-                                <!-- Double Product End -->
-                                <!-- Double Product Start -->
-                                <div class="double-product">
-                                    <!-- Single Product Start -->
-                                    <div class="single-product">
-                                        <!-- Product Image Start -->
-                                        <div class="pro-img">
-                                            <a href="product.html">
-                                                <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
-                                                    alt="single-product">
-                                                <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
-                                                    alt="single-product">
-                                            </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
-                                                <i class="lnr lnr-magnifier"></i>
-                                            </a>
-                                        </div>
-                                        <!-- Product Image End -->
-                                        <!-- Product Content Start -->
-                                        <div class="pro-content">
-                                            <div class="pro-info">
-                                                <h4>
-                                                    <a href="product.html">Bộ 5 sinh vật biển phun nước Munchkin 31205</a>
-                                                </h4>
-                                                <p>
-                                                    <span class="price">159,000 vnđ</span>
-                                                    <del class="prev-price">199,000 vnđ</del>
-                                                </p>
-                                                <div class="label-product l_sale">20
-                                                    <span class="symbol-percent">%</span>
-                                                </div>
-                                            </div>
-                                            <div class="pro-actions">
-                                                <div class="actions-primary">
-                                                    <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
-                                                </div>
-                                                <div class="actions-secondary">
-                                                    <a href="compare.html" title="Compare">
-                                                        <i class="lnr lnr-sync"></i>
-                                                        <span>Add To Compare</span>
-                                                    </a>
-                                                    <a href="wishlist.html" title="WishList">
-                                                        <i class="lnr lnr-heart"></i>
-                                                        <span>Add to WishList</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Product Content End -->
-                                        <span class="sticker-new">new</span>
-                                    </div>
-                                    <!-- Single Product End -->
-                                    <!-- Single Product Start -->
-                                    <div class="single-product">
-                                        <!-- Product Image Start -->
-                                        <div class="pro-img">
-                                            <a href="product.html">
-                                                <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
-                                                    alt="single-product">
-                                                <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
-                                                    alt="single-product">
-                                            </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2242,7 +2286,8 @@
                                                 <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
                                                     alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2291,7 +2336,8 @@
                                                 <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
                                                     alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2344,7 +2390,8 @@
                                                 <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
                                                     alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2393,7 +2440,112 @@
                                                 <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
                                                     alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
+                                                <i class="lnr lnr-magnifier"></i>
+                                            </a>
+                                        </div>
+                                        <!-- Product Image End -->
+                                        <!-- Product Content Start -->
+                                        <div class="pro-content">
+                                            <div class="pro-info">
+                                                <h4>
+                                                    <a href="product.html">Bộ 5 sinh vật biển phun nước Munchkin 31205</a>
+                                                </h4>
+                                                <p>
+                                                    <span class="price">159,000 vnđ</span>
+                                                    <del class="prev-price">199,000 vnđ</del>
+                                                </p>
+                                                <div class="label-product l_sale">20
+                                                    <span class="symbol-percent">%</span>
+                                                </div>
+                                            </div>
+                                            <div class="pro-actions">
+                                                <div class="actions-primary">
+                                                    <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
+                                                </div>
+                                                <div class="actions-secondary">
+                                                    <a href="compare.html" title="Compare">
+                                                        <i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span>
+                                                    </a>
+                                                    <a href="wishlist.html" title="WishList">
+                                                        <i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Content End -->
+                                        <span class="sticker-new">new</span>
+                                    </div>
+                                    <!-- Single Product End -->
+                                </div>
+                                <!-- Double Product End -->
+                                <!-- Double Product Start -->
+                                <div class="double-product">
+                                    <!-- Single Product Start -->
+                                    <div class="single-product">
+                                        <!-- Product Image Start -->
+                                        <div class="pro-img">
+                                            <a href="product.html">
+                                                <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
+                                                    alt="single-product">
+                                                <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
+                                                    alt="single-product">
+                                            </a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
+                                                <i class="lnr lnr-magnifier"></i>
+                                            </a>
+                                        </div>
+                                        <!-- Product Image End -->
+                                        <!-- Product Content Start -->
+                                        <div class="pro-content">
+                                            <div class="pro-info">
+                                                <h4>
+                                                    <a href="product.html">Bộ 5 sinh vật biển phun nước Munchkin 31205</a>
+                                                </h4>
+                                                <p>
+                                                    <span class="price">159,000 vnđ</span>
+                                                    <del class="prev-price">199,000 vnđ</del>
+                                                </p>
+                                                <div class="label-product l_sale">20
+                                                    <span class="symbol-percent">%</span>
+                                                </div>
+                                            </div>
+                                            <div class="pro-actions">
+                                                <div class="actions-primary">
+                                                    <a href="cart.html" title="Add to Cart"> + Add To Cart</a>
+                                                </div>
+                                                <div class="actions-secondary">
+                                                    <a href="compare.html" title="Compare">
+                                                        <i class="lnr lnr-sync"></i>
+                                                        <span>Add To Compare</span>
+                                                    </a>
+                                                    <a href="wishlist.html" title="WishList">
+                                                        <i class="lnr lnr-heart"></i>
+                                                        <span>Add to WishList</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Content End -->
+                                        <span class="sticker-new">new</span>
+                                    </div>
+                                    <!-- Single Product End -->
+                                    <!-- Single Product Start -->
+                                    <div class="single-product">
+                                        <!-- Product Image Start -->
+                                        <div class="pro-img">
+                                            <a href="product.html">
+                                                <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
+                                                    alt="single-product">
+                                                <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20160919/bo-sinh-vat-bien-nho-munchkin-mk31205-1.jpg?mode=max&width=153&height=153"
+                                                    alt="single-product">
+                                            </a>
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2451,7 +2603,8 @@
                                                 <img class="primary-img" src="img/products/43.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/42.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2498,7 +2651,8 @@
                                                 <img class="primary-img" src="img/products/41.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/39.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2549,7 +2703,8 @@
                                                 <img class="primary-img" src="img/products/5.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/6.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2596,7 +2751,8 @@
                                                 <img class="primary-img" src="img/products/9.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/10.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2647,7 +2803,8 @@
                                                 <img class="primary-img" src="img/products/11.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/12.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2694,7 +2851,8 @@
                                                 <img class="primary-img" src="img/products/3.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/4.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2745,7 +2903,8 @@
                                                 <img class="primary-img" src="img/products/43.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/42.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2792,7 +2951,8 @@
                                                 <img class="primary-img" src="img/products/1.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/7.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2850,7 +3010,8 @@
                                                 <img class="primary-img" src="img/products/17.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/18.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2897,7 +3058,8 @@
                                                 <img class="primary-img" src="img/products/19.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/20.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2948,7 +3110,8 @@
                                                 <img class="primary-img" src="img/products/20.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/21.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -2995,7 +3158,8 @@
                                                 <img class="primary-img" src="img/products/21.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/22.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -3046,7 +3210,8 @@
                                                 <img class="primary-img" src="img/products/23.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/24.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -3093,7 +3258,8 @@
                                                 <img class="primary-img" src="img/products/24.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/25.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -3144,7 +3310,8 @@
                                                 <img class="primary-img" src="img/products/26.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/27.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -3191,7 +3358,8 @@
                                                 <img class="primary-img" src="img/products/28.jpg" alt="single-product">
                                                 <img class="secondary-img" src="img/products/29.jpg" alt="single-product">
                                             </a>
-                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
+                                            <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal"
+                                                title="Quick View">
                                                 <i class="lnr lnr-magnifier"></i>
                                             </a>
                                         </div>
@@ -4517,8 +4685,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4560,8 +4730,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4607,8 +4779,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4650,8 +4824,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4697,8 +4873,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4740,8 +4918,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4787,8 +4967,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4830,8 +5012,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4877,8 +5061,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4920,8 +5106,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -4967,8 +5155,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -5010,8 +5200,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -5057,8 +5249,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -5100,8 +5294,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -5147,8 +5343,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180920/do-choi-dan-piano-3341.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -5190,8 +5388,10 @@
                                 <!-- Product Image Start -->
                                 <div class="pro-img">
                                     <a href="product.html">
-                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
-                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153" alt="single-product">
+                                        <img class="primary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
+                                        <img class="secondary-img" src="https://media.shoptretho.com.vn/upload/image/product/20180828/tham-xop-2-mat-nhieu-hinh-3.jpg?mode=max&width=153&height=153"
+                                            alt="single-product">
                                     </a>
                                     <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View">
                                         <i class="lnr lnr-magnifier"></i>
@@ -5253,7 +5453,8 @@
                             </div>
                             <div class="newsletter-box">
                                 <form action="#">
-                                    <input class="subscribe" placeholder="your email address" name="email" id="subscribe" type="text">
+                                    <input class="subscribe" placeholder="your email address" name="email" id="subscribe"
+                                        type="text">
                                     <button type="submit" class="submit">subscribe!</button>
                                 </form>
                             </div>
@@ -5384,7 +5585,8 @@
                                 <div class="footer-content">
                                     <ul class="footer-list address-content">
                                         <li>
-                                            <i class="lnr lnr-map-marker"></i> Address: 169-C, Technohub, Dubai Silicon Oasis.
+                                            <i class="lnr lnr-map-marker"></i> Address: 169-C, Technohub, Dubai Silicon
+                                            Oasis.
                                         </li>
                                         <li>
                                             <i class="lnr lnr-envelope"></i>
@@ -5544,7 +5746,8 @@
                                                     <span class="saving-price">save 8%</span>
                                                 </p>
                                             </div>
-                                            <p class="mb-20 pro-desc-details">Long printed dress with thin adjustable straps. V-neckline and wiring under the
+                                            <p class="mb-20 pro-desc-details">Long printed dress with thin adjustable
+                                                straps. V-neckline and wiring under the
                                                 bust with ruffles at the bottom of the dress.</p>
                                             <div class="product-size mb-20 clearfix">
                                                 <label>Size</label>
