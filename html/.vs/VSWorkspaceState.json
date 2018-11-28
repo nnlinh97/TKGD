@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\img",
+    "\\js",
+    "\\js\\vendor"
   ],
+  "SelectedNode": "\\linh_index_logged.html",
   "PreviewInSolutionExplorer": false
 }
